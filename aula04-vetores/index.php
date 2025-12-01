@@ -98,7 +98,7 @@
     $indice = array_search(30, $numeros);
 
     //Exibindo o indice onde o valor foi encontardo
-    echo "<h2>O índice do valor 30 é:</h2><br> " . $indice;
+    echo "<h2>O índice do valor 30 é: </h2>" . $indice;
     echo "<br>";
     print_r($numeros);
 
