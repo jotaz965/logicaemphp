@@ -25,7 +25,7 @@
 
              //A variavel pode srer mudada
              $nome = "jose paulo";
-             echo "seja bem-vinda, $nome $sobrenome";
+             echo "seja bem-vindo, $nome $sobrenome";
 
              echo "<br> <br>";
 

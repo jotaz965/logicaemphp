@@ -89,6 +89,10 @@
 
         echo($sol && $sem_chuva || $feriado) ? "Voce poderia sair para passear." : "melhor ficar em casa";
 
+        $nome = Jose;
+
+        echo "$n"
+
 
     ?>
 </body>
