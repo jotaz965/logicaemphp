@@ -4,6 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
+
+    <style>
+        body {
+            font-family:  Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            width: 500px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, textarea {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #004c98;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -12,16 +70,16 @@
         <form action="processa.php" method="POST">
 
             <label>Nome: </label>
-            <input type="text" name="nome" required />
+            <input type="text" name="nome" required placeholder="Nome completo" />
 
             <label>Email: </label>
-            <input type="Email" name="Email" required />
+            <input type="email" name="email" required placeholder="@gmail.com" />
 
             <label>Telefone: </label>
             <input type="text" name="telefone" placeholder="(00) 00000-0000"  />
 
             <label>Mensagem: </label>
-            <textarea name="Mensagem" rows="4" required></textarea>
+            <textarea name="mensagem" rows="4" required ></textarea>
 
             <button type="submit">Enviar</button>
         </form>
